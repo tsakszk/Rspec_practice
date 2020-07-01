@@ -5,6 +5,7 @@ RSpec.describe "Posts", type: :request do
       before do
         get posts_new_path
       end
+
       it 'タイトルが正しく表示されていること' do
         expect(response.body).to include("新規投稿")
       end
